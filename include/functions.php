@@ -7,7 +7,7 @@ function Query($query, $data = null)
     return true;
 }
 
-function selectQuery($query, $data = null)
+function selectQuery($query, $data)
 {
     global $db;
     return $db->selectQuery($query, $data);

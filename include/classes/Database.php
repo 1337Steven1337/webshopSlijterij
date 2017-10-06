@@ -26,10 +26,8 @@ class Database
             die();
         }
     }
-    //Query, you can or not send data
-    function selectQuery($query, $data = null){
-
-        var_dump($query, $data);
+    //Query that can send data back
+    function selectQuery($query, $data){
         try{
             $dbh = $this->conn->prepare($query);
             $dbh->execute($data);
@@ -40,7 +38,7 @@ class Database
         }
         return $return;
     }
-
+    //simple insert query's
     function Query($query, $data = null){
         try{
             $dbh = $this->conn->prepare($query);

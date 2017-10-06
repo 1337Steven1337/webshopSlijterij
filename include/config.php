@@ -11,9 +11,3 @@
 
     //Password for the webshop db
     define("PASSWORD", "");
-
-    //Root
-    /*
-     * If there is no projectfolder keep empty
-     */
-    define("ROOT", "/webshopSlijterij/");
