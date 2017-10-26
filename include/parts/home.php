@@ -1,4 +1,4 @@
-<div class="container homeContainer">
+<div class="container homeContainer content">
     <div class="row">
         <div class="col-md-4 productItem">
             <h2>Captain Morgan Spiced Gold</h2>
