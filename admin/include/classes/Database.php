@@ -49,4 +49,9 @@ class Database
         }
         return true;
     }
+    //get last insert id function
+    function getLastId(){
+        $dbh = $this->conn->lastInsertId();
+        return $dbh;
+    }
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 27 okt 2017 om 16:31
+-- Gegenereerd op: 27 okt 2017 om 22:50
 -- Serverversie: 10.1.21-MariaDB
 -- PHP-versie: 7.1.1
 
@@ -58,7 +58,9 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`id`, `name`, `description`) VALUES
-(1, 'Bier', 'Het lekkere aan bier is dat je er altijd zin in heb!');
+(1, 'Bier', 'Het lekkere aan bier is dat je er altijd zin in heb!'),
+(2, 'Wijn', 'Altijd een lekker wijntje'),
+(3, 'Middel sterke drank', 'Dit is sterke drank voor mensen die het net niet aan kunnen');
 
 -- --------------------------------------------------------
 
@@ -96,10 +98,10 @@ CREATE TABLE `orderproduct` (
 
 CREATE TABLE `product` (
   `id` int(11) NOT NULL,
-  `categoryid` int(11) NOT NULL,
+  `categoryid` int(11) DEFAULT NULL,
   `name` varchar(255) NOT NULL,
   `description` text,
-  `img` varchar(255) NOT NULL,
+  `img` varchar(255) DEFAULT NULL,
   `price` float NOT NULL DEFAULT '0',
   `btw` float NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -109,7 +111,8 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `categoryid`, `name`, `description`, `img`, `price`, `btw`) VALUES
-(1, 1, 'Heiniken Krat 24', 'Iedereen heeft hier wel zin in!', '', 15.99, 21);
+(1, 1, 'Heiniken Krat 20', 'Iedereen heeft hier wel zin in!', 'heiniken.png', 20.99, 21),
+(7, 3, 'Campari', 'Vooral lekker om een shotje van te nemen', NULL, 20, 21);
 
 -- --------------------------------------------------------
 
@@ -186,7 +189,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT voor een tabel `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT voor een tabel `orderlist`
 --
@@ -196,7 +199,7 @@ ALTER TABLE `orderlist`
 -- AUTO_INCREMENT voor een tabel `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT voor een tabel `user`
 --

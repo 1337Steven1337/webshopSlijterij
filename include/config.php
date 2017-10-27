@@ -7,7 +7,7 @@
     define("DB", "webshop");
 
     //Username for the webshop db
-    define("USERNAME", "root");
+    define("USERNAME", "webshopAdmin");
 
     //Password for the webshop db
-    define("PASSWORD", "");
+    define("PASSWORD", "RKw9HfqS36yvSRqh");

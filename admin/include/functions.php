@@ -28,3 +28,8 @@ function price_format($x)
 {
     return number_format((float)$x, 2, '.', '');
 }
+
+function getLastId(){
+    global $db;
+    return $db->getLastId();
+}
