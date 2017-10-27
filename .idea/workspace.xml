@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="902bf58f-1934-4c81-838e-072e04a57a01" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/include/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/include/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webshopSlijterij.iml" afterPath="$PROJECT_DIR$/.idea/webshopSlijterij.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/product/noimg.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/img/drank1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/img/drank2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/img/drank3.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/action/ac_products.php" afterPath="$PROJECT_DIR$/admin/action/ac_products.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/include/classes/Database.php" afterPath="$PROJECT_DIR$/admin/include/classes/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/include/config.php" afterPath="$PROJECT_DIR$/admin/include/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/include/css/style.css" afterPath="$PROJECT_DIR$/admin/include/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/include/functions.php" afterPath="$PROJECT_DIR$/admin/include/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/include/js/products.js" afterPath="$PROJECT_DIR$/admin/include/js/products.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/include/parts/header.php" afterPath="$PROJECT_DIR$/admin/include/parts/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/include/parts/products.php" afterPath="$PROJECT_DIR$/admin/include/parts/products.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/include/session.php" afterPath="$PROJECT_DIR$/admin/include/session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/config.php" afterPath="$PROJECT_DIR$/include/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/parts/header.php" afterPath="$PROJECT_DIR$/include/parts/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/parts/home.php" afterPath="$PROJECT_DIR$/include/parts/home.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,13 +36,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/parts/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="272">
+              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
               <folding>
-                <marker date="1509137400472" expanded="true" signature="905:934" ph="SELECT name,... product" />
+                <marker date="1509138274389" expanded="true" signature="85:114" ph="SELECT name,... product" />
+                <marker date="1509138274389" expanded="true" signature="154:249" ph="..." />
+                <marker date="1509138274389" expanded="true" signature="293:310" ph="..." />
+                <marker date="1509138274389" expanded="true" signature="293:311" ph="..." />
+                <marker date="1509138274389" expanded="true" signature="293:317" ph="..." />
+                <marker date="1509138274389" expanded="true" signature="293:398" ph="..." />
+                <marker date="1509138274389" expanded="true" signature="293:520" ph="..." />
+                <marker date="1509138274389" expanded="true" signature="532:551" ph="..." />
               </folding>
             </state>
           </provider>
@@ -69,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -214,11 +210,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
+              <option name="myItemId" value="files" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="parts" />
+              <option name="myItemId" value="product" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -238,6 +234,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\webshopSlijterij\files\product" />
+      <recent name="C:\xampp\webshopSlijterij\include\img" />
       <recent name="C:\xampp\htdocs\include\js" />
       <recent name="C:\xampp\htdocs\include\parts" />
       <recent name="C:\xampp\htdocs\webshopSlijterij\include" />
@@ -352,12 +350,12 @@
       <workItem from="1509018424748" duration="521000" />
       <workItem from="1509101032236" duration="2167000" />
       <workItem from="1509106793758" duration="7302000" />
-      <workItem from="1509120444225" duration="16617000" />
+      <workItem from="1509120444225" duration="17664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57108000" />
+    <option name="totallyTimeSpent" value="58155000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -773,6 +771,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/parts/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <marker date="1509138274389" expanded="true" signature="85:114" ph="SELECT name,... product" />
+            <marker date="1509138274389" expanded="true" signature="154:249" ph="..." />
+            <marker date="1509138274389" expanded="true" signature="293:310" ph="..." />
+            <marker date="1509138274389" expanded="true" signature="293:311" ph="..." />
+            <marker date="1509138274389" expanded="true" signature="293:317" ph="..." />
+            <marker date="1509138274389" expanded="true" signature="293:398" ph="..." />
+            <marker date="1509138274389" expanded="true" signature="293:520" ph="..." />
+            <marker date="1509138274389" expanded="true" signature="532:551" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/include/include.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -786,16 +801,6 @@
         <state relative-caret-position="85">
           <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/parts/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <marker date="1509137400472" expanded="true" signature="905:934" ph="SELECT name,... product" />
-          </folding>
         </state>
       </provider>
     </entry>
