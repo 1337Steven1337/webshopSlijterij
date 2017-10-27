@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    if(document.cookie.indexOf("checkedAge=") <= 1)
+        $("#ageModal").modal();
+
     //Check hashchange
     showContent();
     window.onhashchange = function(){
@@ -14,4 +17,8 @@ function showContent(){
             $(".nav-active").removeClass("active");
             $(".nav-"+ hash).addClass("active");
         }
+}
+
+function setAgeCheck(){
+    document.cookie = "checkedAge=1";
 }

@@ -1,6 +1,7 @@
 <?php
     include "include/include.php";
     include "include/parts/header.php";
+    include "include/parts/agecheck.php";
     include "include/parts/nav.php";
     include "include/parts/home.php";
     include "include/parts/winkelmandje.php";
