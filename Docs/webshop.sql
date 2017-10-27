@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 26 okt 2017 om 12:57
+-- Gegenereerd op: 27 okt 2017 om 16:31
 -- Serverversie: 10.1.21-MariaDB
 -- PHP-versie: 7.1.1
 
@@ -23,6 +23,27 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Tabelstructuur voor tabel `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `salt` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `admin`
+--
+
+INSERT INTO `admin` (`id`, `username`, `password`, `salt`, `email`) VALUES
+(1, 'admin', 'ff733032b2efe2ad08b34c474ce8b5ea', 'xe7NjLpGpIVTWoC', 'bartbongers1998@gmail.com');
+
+-- --------------------------------------------------------
+
+--
 -- Tabelstructuur voor tabel `category`
 --
 
@@ -31,6 +52,13 @@ CREATE TABLE `category` (
   `name` varchar(255) NOT NULL,
   `description` text
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `category`
+--
+
+INSERT INTO `category` (`id`, `name`, `description`) VALUES
+(1, 'Bier', 'Het lekkere aan bier is dat je er altijd zin in heb!');
 
 -- --------------------------------------------------------
 
@@ -76,6 +104,13 @@ CREATE TABLE `product` (
   `btw` float NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Gegevens worden geëxporteerd voor tabel `product`
+--
+
+INSERT INTO `product` (`id`, `categoryid`, `name`, `description`, `img`, `price`, `btw`) VALUES
+(1, 1, 'Heiniken Krat 24', 'Iedereen heeft hier wel zin in!', '', 15.99, 21);
+
 -- --------------------------------------------------------
 
 --
@@ -98,6 +133,12 @@ CREATE TABLE `user` (
 --
 -- Indexen voor geëxporteerde tabellen
 --
+
+--
+-- Indexen voor tabel `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexen voor tabel `category`
@@ -137,10 +178,15 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT voor een tabel `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT voor een tabel `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT voor een tabel `orderlist`
 --
@@ -150,7 +196,7 @@ ALTER TABLE `orderlist`
 -- AUTO_INCREMENT voor een tabel `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT voor een tabel `user`
 --
